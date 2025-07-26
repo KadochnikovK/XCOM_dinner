@@ -165,12 +165,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         switch (name) {
-            case "taxId":
-                if (!/^\d{10,12}$/.test(value)) {
-                    addError(field, "ИНН должен содержать 10 или 12 цифр");
-                    return false;
-                }
-                break;
+            // case "taxId":
+            //     if (!/^\d{10,12}$/.test(value)) {
+            //         addError(field, "ИНН должен содержать 10 или 12 цифр");
+            //         return false;
+            //     }
+            //     break;
             case "email":
                 if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
                     addError(field, "Введите корректный email");
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 phone: form.elements.phone.value.trim(),
                 company: form.elements.company.value.trim(),
                 job: form.elements.job.value.trim(),
-                taxId: form.elements.taxId.value.trim(),
+                // taxId: form.elements.taxId.value.trim(),
                 privacyPolicy: form.elements["privacy-policy"].checked,
             };
 

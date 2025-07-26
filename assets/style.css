@@ -962,9 +962,6 @@ a {
 .form__item:nth-last-child(1) {
   grid-column: span 2;
 }
-.form__item:nth-last-child(2) {
-  grid-column: span 2;
-}
 .form__checkbox {
   position: absolute;
   opacity: 0;
