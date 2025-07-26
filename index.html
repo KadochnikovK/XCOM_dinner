@@ -275,24 +275,23 @@
                 </div>
                 <div id="map" class="map"></div>
 
-                <script
-                    src="https://api-maps.yandex.ru/2.1/?apikey=eb4cb2bb-d3eb-47fe-acba-5ab39a7aef28&lang=ru_RU"></script>
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=eb4cb2bb-d3eb-47fe-acba-5ab39a7aef28&lang=ru_RU"></script>
                 <script>
                     ymaps.ready(init);
-
+                
                     function init() {
                         var myMap = new ymaps.Map("map", {
-                            center: [55.8636, 37.6054],
+                            center: [59.8993, 30.3167], 
                             zoom: 16,
                             controls: ['zoomControl', 'fullscreenControl']
                         });
-
-                        var myPlacemark = new ymaps.Placemark([55.8636, 37.6054], {
-                            balloonContent: 'Отрадная ул., 2Б, стр. 9, Москва'
+                
+                        var myPlacemark = new ymaps.Placemark([59.8993, 30.3167], {
+                            balloonContent: 'Новгородская ул., 13Л, Санкт-Петербург'
                         }, {
                             preset: 'islands#redDotIcon'
                         });
-
+                
                         myMap.geoObjects.add(myPlacemark);
                         myMap.behaviors.disable('scrollZoom');
                     }
